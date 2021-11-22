@@ -1,0 +1,28 @@
+ALGORITHM algorithm_name
+VAR
+    C:char:='';
+    nb_char :INTEGER :=0;
+    nb_word : INTEGER :=0;
+    nb_vow : INTEGER :=0
+    n: CHAR;
+BEGIN
+ //nbre de caractére 
+    WHILE (C <> '.') Do 
+       Read(C);
+  //nbre de word
+    IF 
+    (c='') THEN
+    nb_word:=nb_word+1;
+    END IF
+//nbre de voyelle
+    nb_char := nb_char+1;
+   IF( C='a'or C='u'or C='y'or C='o' or C='e'or c='i') then 
+     nb_vow:= nb_word+1;
+    END IF
+END WHILE
+
+write ("length of the sentence is" ,nb_char);
+write("The number of words in the sentence is" ,nb_word);
+write("the number of vowels in the sentence. is" , nb_vow);
+
+END
